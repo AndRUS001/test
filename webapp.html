@@ -17,7 +17,7 @@
             height: 100vh;
         }
         .container {
-            background-color: #fff;
+            background-color: #eff0f1;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -36,17 +36,18 @@
             margin-bottom: 20px;
         }
         input[type="text"] {
-            width: 50px;
-            height: 70px;
+            width: 30px;
+            height: 30px;
             text-align: center;
-            padding: 10px;
+            padding: 5px;
             margin-bottom: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-family: 'Roboto', sans-serif;
+            font-size: 16px;
         }
         .emoji {
-            font-size: 48px;
+            font-size: 64px;
             margin-bottom: 20px;
         }
         button {
@@ -68,11 +69,11 @@
         <p>Please confirm the code sent to your Telegram.</p>
         <form>
             <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
-                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
-                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
-                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
-                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
-                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
+                <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
+                <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
+                <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
+                <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
+                <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
             </div>
             <button>Confirm</button>
         </form>
