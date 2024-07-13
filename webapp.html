@@ -35,16 +35,22 @@
             font-size: 18px;
             margin-bottom: 20px;
         }
-        input[type="text"] {
-            width: 30px;
-            height: 30px;
+        .code-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .code-input input[type="text"] {
+            width: 50px;
+            height: 50px;
             text-align: center;
             padding: 5px;
-            margin-bottom: 5px;
+            margin-right: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-family: 'Roboto', sans-serif;
-            font-size: 16px;
+            font-size: 24px;
         }
         .emoji {
             font-size: 64px;
@@ -68,7 +74,7 @@
         <h1>Telegram Code Confirmation</h1>
         <p>Please confirm the code sent to your Telegram.</p>
         <form>
-            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+            <div class="code-input">
                 <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
                 <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
                 <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
