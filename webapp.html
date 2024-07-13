@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram Verification</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f6f6f6;
             margin: 0;
             padding: 0;
@@ -28,6 +29,15 @@
         p {
             color: #333;
         }
+        input[type="text"] {
+            width: 30px;
+            text-align: center;
+            padding: 10px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -41,11 +51,11 @@
                 <span style="font-size: 24px; margin-left: 5px;">&hellip;</span>
             </div>
             <div style="display: flex; justify-content: center;">
-                <input type="text" maxlength="1" style="width: 30px; text-align: center; padding: 10px; margin-right: 5px;">
-                <input type="text" maxlength="1" style="width: 30px; text-align: center; padding: 10px; margin-right: 5px;">
-                <input type="text" maxlength="1" style="width: 30px; text-align: center; padding: 10px; margin-right: 5px;">
-                <input type="text" maxlength="1" style="width: 30px; text-align: center; padding: 10px; margin-right: 5px;">
-                <input type="text" maxlength="1" style="width: 30px; text-align: center; padding: 10px;">
+                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
+                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
+                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
+                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
+                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
             </div>
             <button style="padding: 10px; margin-top: 10px; background-color: #0088cc; color: #fff; border: none; border-radius: 5px;">Confirm</button>
         </form>
