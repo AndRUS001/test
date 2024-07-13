@@ -35,11 +35,21 @@
         <h1>Telegram Code Confirmation</h1>
         <p>Please confirm the code sent to your Telegram.</p>
         <form>
-            <input type="text" placeholder="Enter code" style="padding: 10px; margin-top: 10px;">
-            <br>
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+                <span style="font-size: 24px;">📩</span>
+                <span style="font-size: 24px; margin-left: 5px;">Entering code...</span>
+                <span style="font-size: 24px; margin-left: 5px;">&hellip;</span>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <input type="text" maxlength="1" style="width: 30px; text-align: center; padding: 10px; margin-right: 5px;">
+                <input type="text" maxlength="1" style="width: 30px; text-align: center; padding: 10px; margin-right: 5px;">
+                <input type="text" maxlength="1" style="width: 30px; text-align: center; padding: 10px; margin-right: 5px;">
+                <input type="text" maxlength="1" style="width: 30px; text-align: center; padding: 10px; margin-right: 5px;">
+                <input type="text" maxlength="1" style="width: 30px; text-align: center; padding: 10px;">
+            </div>
             <button style="padding: 10px; margin-top: 10px; background-color: #0088cc; color: #fff; border: none; border-radius: 5px;">Confirm</button>
         </form>
     </div>
 </body>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </html>
